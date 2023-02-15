@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+  position: fixed;
+  padding: 8px;
+  left: 0;
+  top: 40px;
+  bottom: 0;
+  z-index:10;
+  background-color: black;
+  width:150px;
+}
+.menu-small-display{
+  
+  position: fixed;
+  padding: 8px;
+  left: 0;
+  top: 40px;
+  bottom: 0;
+  z-index:10;
+  background-color: black;
+  width:150px;
+
+}
+
+@media screen and (max-width: 640px) {
+  .menu{
+     position:absolute ;
+     left:-300px;
+    
+    
+  }
+  .menu-small-display {
+    display: flex;
+    flex-direction: column;
+    width:150px;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    height:100vh;
+    padding: 8px;
+    left: 0;
+    top:40px;
+    z-index: 10;
+    bottom: 0;
+    background-color: black;
+ 
+  }
+}
